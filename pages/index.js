@@ -1,3 +1,4 @@
+// Import with a different name
 import Meta from 'components/meta'
 import HeroComponent from 'components/hero'
 import Container from 'components/container'

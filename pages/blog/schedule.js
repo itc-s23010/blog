@@ -1,4 +1,5 @@
 import { getPostBySlug } from 'lib/api'
+import { extractText } from 'lib/extract-text'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import PostHeader from 'components/post-header'
@@ -62,8 +63,8 @@ export default Schedule
 
 export async function getStaticProps () {
   const slug = 'schedule'
-
   const post = await getPostBySlug(slug)
+  const description = extractText(post.content)
 
   return {
     props: {
@@ -71,7 +72,8 @@ export async function getStaticProps () {
       publish: post.publishDate,
       content: post.content,
       eyecatch: post.eyecatch,
-      categories: post.categories
+      categories: post.categories,
+      description: description
     }
   }
 }

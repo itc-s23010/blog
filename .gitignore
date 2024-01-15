@@ -27,6 +27,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+API_KEY=J0auN39Gm1F509bu4I7CzT0GjvqnBE27eukF
+SERVICE_DOMAIN=s23010
 
 # vercel
 .vercel

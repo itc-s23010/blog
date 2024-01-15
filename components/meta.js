@@ -54,3 +54,4 @@ const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
     </Head>
   )
 }
+export default Meta

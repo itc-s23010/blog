@@ -9,7 +9,7 @@ import {
   TwoColumnSidebar
 } from 'components/two-column'
 import Image from 'next/image'
-import eyecatch from 'next-react-website/blog-app-router/images/about.jpg'
+import eyecatch from 'images/about.jpg'
 
 const About = () => {
   return (

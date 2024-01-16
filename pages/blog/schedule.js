@@ -73,7 +73,7 @@ export async function getStaticProps () {
       content: post.content,
       eyecatch: post.eyecatch,
       categories: post.categories,
-      description: description
+      description
     }
   }
 }

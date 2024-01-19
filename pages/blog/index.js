@@ -21,7 +21,7 @@ export async function getStaticProps () {
   const posts = await getAllPosts()
 
   for (const post of posts) {
-    if (!hasOwnProperty('eyecatch')) {
+    if (!post.hasOwnProperty('eyecatch')) {
       post.eyecatch = eyecatchLocal
     }
     const { base64 } = await getPlaiceholder(post.eyecatch.url)
